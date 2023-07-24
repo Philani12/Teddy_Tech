@@ -1,0 +1,56 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.StickNav{
+    width: 100vw;
+    height: 2vh;
+    margin: 0;
+    padding: 0.9vw;
+    padding-left: 7vw;
+    background-color: limegreen;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+.LeftStick {
+    padding-left: 1vw;
+    margin-top: -2.5vh;
+    font-size: 17px;
+    
+}
+
+.LeftStick .Link1{
+    background-color: gainsboro;
+    font-style: italic;
+    padding: 1rem;
+    display: inline-flex;
+    transform: skewX(10deg);
+    color: rgb(0, 46, 62);
+}
+
+.LeftStick .Link2{
+    padding: 0.9em;
+    color: aliceblue;
+}
+
+.RightStick {
+    align-self: right;
+    justify-content: center;
+    text-align: left;
+    color: deepskyblue;
+}
+
+/*.MainContainer{
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0 16px;
+}*/
+
