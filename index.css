@@ -5,11 +5,11 @@ body {
 }
 
 .StickNav{
-    width: 100vw;
     height: 2vh;
     margin: 0;
     padding: 0.9vw;
     padding-left: 7vw;
+    padding-right: 7vw;
     background-color: limegreen;
     display: flex;
     flex-direction: row;
@@ -25,7 +25,7 @@ a {
     padding-left: 1vw;
     margin-top: -2.5vh;
     font-size: 17px;
-    
+    flex-grow: 1;
 }
 
 .LeftStick .Link1{
@@ -40,24 +40,84 @@ a {
 .LeftStick .Link2{
     padding: 0.9em;
     color: aliceblue;
+    display: inline-flex;
+}
+
+.LeftStick a:hover {
+    color: rgb(0, 46, 62);
+    transform: translateY(-5px);
+    transition: ease-in-out 0.5s;
 }
 
 .RightStick {
-    display:inline-block;
-    align-self: right;
-    justify-content:flex-end;
-    text-align: left;
-    color: deepskyblue;
-    margin-right: 13vw;
+    display: flex;
+    padding-right: 1vw;
     flex-shrink: 1;
+    margin-top: -2.5vh;
 }
 
-.RightStick .Link3 {
+.RightStick a {
     color: aliceblue;
+    display: inline-flex;
+    margin-top: 2vh;
+    font-size: 1.15em;
 }
-/*.MainContainer{
-    max-width: 90%;
-    margin: 0 auto;
-    padding: 0 16px;
-}*/
+.RightStick span{
+    margin-top: 1.4vh;
+    /* display: flex; */ 
+    color:aliceblue;
+    font-size: 1.8em;
+}
+
+.RightStick a:hover{
+    color: rgb(0, 46, 62);
+    transform: translateY(-5px);
+    transition: ease-in-out 0.35s;
+}
+
+.NavBar {
+    margin-top: -0.5vh;
+    background-color: gainsboro;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.NavBar .LogoSide {
+    display: inline-flex;
+    margin-left: 5vw;
+    justify-content: center;
+}
+
+.LogoSide a {
+    font-family: 'Tektur', cursive;
+    font-size: 3rem;
+    color: limegreen;
+}
+
+.LogoSide a:hover{
+    font-size: 3.3rem;
+}
+
+.links {
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-right: 2vw;
+    align-items: center;
+}
+
+.links a {
+    color: limegreen;
+    margin-left: 2vw;
+    font-size: 1.2em;
+}
+
+.links a:hover {
+    color: rgb(0, 46, 62);
+    transform: translateY(-5px);
+    transition: ease-in-out 0.35s;
+}
+
+
 
