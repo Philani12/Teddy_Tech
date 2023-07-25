@@ -14,6 +14,7 @@ body {
     display: flex;
     flex-direction: row;
     overflow: hidden;
+    justify-content: space-between;
 }
 
 a {
@@ -42,12 +43,18 @@ a {
 }
 
 .RightStick {
+    display:inline-block;
     align-self: right;
-    justify-content: center;
+    justify-content:flex-end;
     text-align: left;
     color: deepskyblue;
+    margin-right: 13vw;
+    flex-shrink: 1;
 }
 
+.RightStick .Link3 {
+    color: aliceblue;
+}
 /*.MainContainer{
     max-width: 90%;
     margin: 0 auto;
